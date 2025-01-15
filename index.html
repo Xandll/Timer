@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xandll - Countdown</title>
+    <!-- Absolute Pfade für die Assets -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" type="img/icon" href="/img/icon.jpg">
+</head>
+<body>
+    <div class="timer-form-container">
+        <form id="timerForm" class="timer-form">
+            <h2>Create New Timer</h2>
+            <div class="form-group">
+                <label for="timerTitle">Title:</label>
+                <input type="text" id="timerTitle" required placeholder="Enter timer title">
+            </div>
+            <div class="form-group">
+                <label for="timerDateTime">Date and Time:</label>
+                <input type="datetime-local" id="timerDateTime" required>
+            </div>
+            <div class="form-group">
+                <label for="timerFormat">Format:</label>
+                <select id="timerFormat" required>
+                    <option value="YYYY:MM:dd:hh:mm:ss:ms">Years, Months, Days, Hours, Minutes, Seconds, MS</option>
+                    <option value="dd:hh:mm:ss:ms">Days, Hours, Minutes, Seconds, MS</option>
+                    <option value="hh:mm:ss">Hours, Minutes, Seconds</option>
+                    <option value="mm:ss">Minutes, Seconds</option>
+                </select>
+            </div>
+            <button type="submit">Create Timer</button>
+        </form>
+    </div>
+    <div id="timers-container"></div>
+
+    <script src="/script.js"></script>
+</body>
+</html>

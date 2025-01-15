@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  timer-app:
+    build: .
+    ports:
+      - "3002:3002"
+    environment:
+      - NODE_ENV=production
+      - PORT=3002
+    volumes:
+      - .:/app
+      - /app/node_modules
+    # Hinzufügen von Healthcheck
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:3002"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
