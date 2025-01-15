@@ -34,6 +34,13 @@
     </div>
     <div id="timers-container"></div>
 
+    <footer class="footer">
+        © <span id="year"></span> All Rights Reserved by <a href="https://xandll.com" target="_blank">xandll.com</a>
+    </footer>
+
     <script src="/script.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>

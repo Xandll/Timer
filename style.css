@@ -22,6 +22,7 @@ body {
     will-change: background-position;
     overflow-y: auto;
     overflow-x: hidden;
+    padding-bottom: 4rem;
 }
 
 @keyframes gradient {
@@ -334,4 +335,27 @@ body::before {
 .error-message p {
     margin-bottom: 2rem;
     opacity: 0.8;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.8rem;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    z-index: 100;
+}
+
+.footer a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: white;
 }
