@@ -6,9 +6,10 @@
 }
 
 body {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    font-family: 'Inter', sans-serif; /* Modernere Schriftart */
+    background: linear-gradient(-45deg, #1e3c72, #2a5298, #1e3c72, #2a5298); /* Modernere Farben */
     background-size: 400% 400%;
-    animation: gradient 20s ease infinite;
+    animation: gradient 15s ease infinite; /* Kürzere Animation */
     min-height: 100vh;
     margin: 0;
     display: flex;
@@ -61,11 +62,11 @@ body::before {
     gap: 2rem;
     padding: 2rem;
     font-family: 'Arial', sans-serif;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05); /* Dezenteres Design */
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
-    border-radius: 1rem;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border-radius: 1.5rem; /* Abgerundete Ecken */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Weichere Schatten */
     max-width: fit-content;
     margin: 1rem auto;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -82,10 +83,11 @@ body::before {
     align-items: center;
     min-width: 100px;
     padding: 1.5rem 1.5rem 0.8rem 1.5rem;
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.1); /* Dezenteres Design */
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
-    border-radius: 0.5rem;
+    border-radius: 1rem; /* Abgerundete Ecken */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Weichere Schatten */
     position: relative;
     border: 1px solid rgba(255, 255, 255, 0.2);
     transition: all 0.3s ease;
@@ -144,11 +146,12 @@ body::before {
 }
 
 .timer-form-container {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.08); /* Dezenteres Design */
     padding: 2rem;
-    border-radius: 1rem;
+    border-radius: 1.5rem; /* Abgerundete Ecken */
     margin-bottom: 2rem;
     backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Weichere Schatten */
     border: 1px solid rgba(255, 255, 255, 0.2);
     max-width: 500px;
     width: 90%;
@@ -225,15 +228,17 @@ body::before {
     padding: 1rem;
     border: none;
     border-radius: 0.5rem;
-    background: rgba(255, 255, 255, 0.2);
+    background: linear-gradient(90deg, #1e3c72, #2a5298); /* Modernere Farben */
     color: white;
+    font-weight: bold;
     font-size: 1rem;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: transform 0.2s ease, background 0.3s ease; /* Übergänge */
 }
 
 .timer-form button:hover {
-    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05); /* Leichte Vergrößerung beim Hover */
+    background: linear-gradient(90deg, #2a5298, #1e3c72); /* Umgekehrte Farben */
 }
 
 #timers-container {
@@ -344,18 +349,18 @@ body::before {
     padding: 1rem;
     text-align: center;
     color: rgba(255, 255, 255, 0.7);
-    font-size: 0.8rem;
-    background: rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem; /* Etwas größere Schrift */
+    background: rgba(0, 0, 0, 0.2); /* Dezenteres Design */
     backdrop-filter: blur(5px);
     z-index: 100;
 }
 
 .footer a {
-    color: rgba(255, 255, 255, 0.9);
-    text-decoration: none;
+    color: #1e90ff; /* Modernere Farbe */
+    text-decoration: underline;
     transition: color 0.3s ease;
 }
 
 .footer a:hover {
-    color: white;
+    color: #00bfff; /* Leuchtendere Farbe beim Hover */
 }
